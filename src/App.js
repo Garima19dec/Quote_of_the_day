@@ -62,10 +62,24 @@ export default function App() {
   }, [])
 
   return(
-    <div>
+    <div style={{
+      display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  minHeight: "100vh",
+  //background: "#5372F0",
+  backgroundImage: "linear-gradient(to right, #17EAD9 , #6078EA)",
+    }}>
       <div>
         { data ? (
-          <div>
+          <div style={{
+            width: "605px",
+            background: "#fff",
+            borderRadius: "15px",
+            padding: "30px 30px 25px",
+            boxShadow: "0 12px 35px rgba(0,0,0,0.1)",
+            color: "#184E68"
+          }}>
             <h1>{data.contents.quotes[0].quote}</h1>
             <h4> - {data.contents.quotes[0].author}</h4>
           </div>

@@ -1,5 +1,6 @@
 {
   "name": "my-app",
+  "homepage": "https://Garima19dec.github.io/quote_of_the_day",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
