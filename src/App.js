@@ -68,9 +68,16 @@ export default function App() {
   justifyContent: "center",
   minHeight: "100vh",
   //background: "#5372F0",
-  backgroundImage: "linear-gradient(to right, #17EAD9 , #6078EA)",
+  backgroundImage: "linear-gradient(to right, #FCE38A , #F38181)",
     }}>
       <div>
+      <p style={{display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  fontSize: "40px",
+  color: "white",
+  textShadow: "2px 2px #184E68",
+  }}>Quote Of The Day</p>
         { data ? (
           <div style={{
             width: "605px",
@@ -80,6 +87,7 @@ export default function App() {
             boxShadow: "0 12px 35px rgba(0,0,0,0.1)",
             color: "#184E68"
           }}>
+           
             <h1>{data.contents.quotes[0].quote}</h1>
             <h4> - {data.contents.quotes[0].author}</h4>
           </div>
